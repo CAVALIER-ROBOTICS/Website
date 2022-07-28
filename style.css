@@ -1,0 +1,592 @@
+:root {
+    --blue: #85A0DE;
+    --lightBlue: #AEC0EA;
+    --forestGreen: #2e5e47;
+    --lightGreen: #43775f;
+    --darkBlue: #0c0444;
+    --white: #fff;
+    --black: #000;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .nav-container {
+    width: 100%;
+    background-color: var(--blue);
+    position: fixed;
+    z-index: 4;
+    border-bottom: var(--darkBlue) solid 4px;
+  }
+  
+  .navbar {
+      display: grid;
+      grid-template-columns: 0.2fr auto 1fr;
+      align-items: center;
+      height: 65px;
+      width: 90%;
+      max-width: 1920px;
+      margin: 0 auto;
+  }
+  
+  #navbar-logo {
+      color: var(--darkBlue);
+      text-decoration: none;
+      font-size: calc(2vw - .1rem);
+      justify-self: start;
+      margin-left: 20px;
+      cursor: pointer;
+      text-overflow: ellipsis;
+  }
+  
+  .nav-menu {
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      list-style: none;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      justify-self: end;
+  }
+  
+  .nav-links {
+      color: var(--darkBlue);
+      font-size: 1.3rem;
+      text-decoration: none;
+  }
+  
+  .nav-links:hover {
+      color: var(--white);
+      transition: all 0.2s ease-out;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    background: var(--white);
+  }
+
+@media screen and (max-width: 1020px) {
+    .nav-container {
+        position: fixed;
+        background-color: var(--blue);
+        border-bottom: none;
+    }
+  
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        background: var(--blue);
+        margin: 0;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 65px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 3;
+    }
+  
+
+    #navbar-logo {
+        color: var(--darkBlue);
+        margin-left: 20px;
+        font-size: 2.2rem;
+        position: absolute;
+        align-items: center;
+        text-overflow: ellipsis;
+    }
+  
+    .nav-menu.active {
+        background: var(--blue);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+  
+    .nav-links {
+        background-color: var(--blue);
+        color: var(--darkBlue);
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+        font-size: 1.3rem;
+    }
+  
+    .nav-links:hover {
+        background-color: var(--darkBlue);
+        color: var(--blue);
+        transition: all 0.4s ease;
+    }
+  
+    .navbar {
+        width: 100%;
+    }
+  
+    #mobile-menu { 
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        z-index: 2;
+    }
+  
+    .menu-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+/* HERO SECTION CSS */
+.main {
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-repeat: repeat;
+    background-size: 20%;
+    min-height: 90vh;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: var(--blue);
+    background-size: 40%;
+    border-bottom: var(--forestGreen) 60px solid;
+    border-radius: 0 0 50% 50%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 50px;
+    /* top: 65px; */
+    min-height: 100vh;
+    position: relative;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+}
+
+.main-content h1 {
+    /* CAVBOTS 7492 */
+    font-family: 'sani Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7rem;
+
+    color: #FFFFFF;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.main-btn {
+    font-size: 1.3rem;
+    top: 20px;
+    font-weight: 700;
+    background-color: var(--darkBlue);
+    padding: 14px 32px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    z-index: 2;
+}
+
+.main-btn a {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #33684f;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main-btn:hover {
+    color: #fff;
+} 
+
+.main-btn:hover:after {
+    width: 100%;
+}
+
+#CavBotsGen {
+    width: 390px;
+    height: 245px;
+    border-radius: 10px; 
+    border: 8px solid var(--darkBlue);
+    position: relative;
+    top: 60px;
+}
+
+@media screen and (max-width: 1020px) {
+    .main-container {
+      margin: 0 auto;
+      background-image: url("/images/TestFinalBlue.jpg");
+      background-repeat: repeat;
+      background-size: 55%;
+      border-top: var(--lightBlue) 10px solid;
+      border-bottom: var(--lightBlue) 75px solid;
+      border-radius: 0;
+      min-height: 100vh;
+      top: 65px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0%;
+    }
+    
+    .main-content h1 {
+        font-size: calc(12vw - .05rem);
+    }
+
+    .main-btn {
+        top: 20px;
+        font-size: 1.5rem;
+        background-color: var(--lightBlue);
+    }
+
+    #CavBotsGen {
+        border: solid var(--lightBlue) 8px;
+        border-radius: 4px;
+        top: 60px;
+        aspect-ratio: 3.5/2;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .main-content h1 {
+        text-align: center;
+        font-size: 6rem;
+        width: 500px;
+    }
+
+    .main-btn {
+        top: 20px;
+        background-color: var(--lightBlue);
+    }
+
+    #CavBotsGen {
+        border: solid var(--lightBlue) 8px;
+        border-radius: 10px;
+        top: 40px;
+        aspect-ratio: 3.5/2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content h1 {
+        font-size: 5rem;
+        width: 400px;
+    }
+    
+    .main-btn {
+        top: 20px;
+        padding: 8px 26px;
+    }
+
+    #CavBotsGen {
+        top: 60px;
+        aspect-ratio: 1.7/1.2;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main-content h1 {
+        font-size: 7vh;
+        width: 300px;
+    }
+
+    .main-btn {
+        font-size: 1rem;
+    }
+
+    #CavBotsGen {
+        width: 300px;
+    }
+}
+
+/* About Us Section CSS */
+    .about {
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-repeat: repeat;
+        background-size: 20%;
+        z-index: 1;
+        width: 100%;
+        max-width: 1920px;
+        padding: 30px 30px;
+        border-bottom: var(--lightBlue) 10px solid;
+        border-radius: 0 0 0% 0%;
+        min-height: 91.5vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .about-container {
+        margin: 10px;
+    }
+
+    .welcome {
+        width: 580px;
+    }
+
+    .about-container h1 {
+        color: var(--forestGreen);
+        z-index: 2;
+        font-size: 5rem;
+    }
+
+    .about-container h2 {
+        font-size: 2.5rem;
+        color: var(--blue);
+        z-index: 2;
+    }
+
+    .about-container p {
+        font-size: 1.7rem;
+        z-index: 2;
+        top: 20px;
+        color: var(--white);
+    }
+
+    .history {
+        width: 580px;
+    } 
+
+    .about-btn {
+        font-size: 1.3rem;
+        background-color: var(--lightBlue);
+        padding: 14px 32px;
+        border-radius: 8px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.35s;
+        z-index: 2;
+        left: 33%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-btn a {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    .about-btn:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #33684f;
+        transition: all 0.35s;
+        border-radius: 4px;
+    }
+    
+    .about-btn:hover {
+        color: #fff;
+    } 
+    
+    .about-btn:hover:after {
+        width: 100%;
+    }
+
+    #CavBotsHang {
+        /* aspect-ratio: 2/1.5; */
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        top: 30px;
+        width: 580px;
+        height: 380px;
+        z-index: 3;
+        border: 8px solid var(--lightBlue);
+        border-radius: 8px;
+    }
+
+    @media screen and (max-width: 1020px) {
+        .about {
+            background-image: url("/images/TestFinalBlue.jpg");
+            background-repeat: repeat;
+            background-size: 55%;
+            z-index: 1;
+            width: 100%;
+            max-width: 1920px;
+            min-height: 91.5vh;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+
+        .about-container {
+            margin: 4px;
+        }
+
+        .about-container h1 {
+            text-align: center;
+        }
+    
+        .about-container h2 {
+            text-align: center;
+            top: 10px;
+        }
+    
+        .about-container p {
+            text-align: center;
+        }
+
+        #CavBotsHang {
+            width: 480px;
+            height: 330px;
+            top: 10px;
+            left: 8%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    /* SOCIAL CSS */
+    .contact-container {
+        min-height: 200px;
+        background-color: var(--blue);
+        border-bottom: var(--lightBlue) 10px solid;
+        display: flex;
+    }
+
+    .contact-flow {
+        z-index: 1;
+        width: 100%;
+        max-width: 1920px;
+        padding: 10px 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-left: var(--lightBlue) 10px solid;
+        border-right: var(--lightBlue) 10px solid;
+    }
+
+    #CavBotsLogo {
+        width: 150px;
+    }
+
+    .contact-flow h2 {
+        color: var(--darkBlue);
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .contact-flow h6 {
+        color: var(--darkBlue);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .social-icons {
+        position: relative;
+        margin: 10px auto;
+    }
+
+    .fa-brands {
+        color: var(--darkBlue);
+        text-decoration: none;
+        padding: 0.3em;
+    }
+
+    .fa-solid {
+        color: var(--darkBlue);
+        text-decoration: none;
+        padding: 0.3em;
+    }
+
+    /* FOOTER CSS */
+    .site-footer {
+        height: 65px;
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-repeat: repeat;
+        background-size: 20%;
+        display: flex;
+    }
+
+    .footer-container {
+        z-index: 1;
+        width: 100%;
+        max-width: 1920px;
+        padding: 30px 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        text-align: center;
+        color: var(--white);
+    }
+
+    @media screen and (max-width: 1020px) {
+    .site-footer {
+        background-size: 55%;
+      }
+    }
