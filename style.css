@@ -548,11 +548,12 @@
 
     @media screen and (max-width: 480px) {
         .about-btn {
-            left: 20%;
+            left: 22%;
         }
         
         #CavBotsHang {
             justify-content: center;
+            right: 10%;
             width: 350px;
         }
     }
