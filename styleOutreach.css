@@ -328,6 +328,7 @@
     display: flex;
     margin: 10px;
     justify-content: center;
+    text-align: center;
 }
 
 .list-content h1:hover {
