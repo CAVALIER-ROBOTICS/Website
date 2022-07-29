@@ -337,7 +337,7 @@
 
     #CavBotsGen {
         top: 60px;
-        aspect-ratio: 1.7/1.2;
+        width: 200px;
     }
 }
 
