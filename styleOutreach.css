@@ -381,6 +381,10 @@
     .list-content h1 {
         font-size: 50px;
     }
+
+    #OutreachPic {
+        display: none;
+    }
 }
 
 /* FOOTER CSS */
