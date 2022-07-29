@@ -102,6 +102,7 @@ html {
         color: var(--darkBlue);
         margin-left: 20px;
         font-size: 2.2rem;
+        top: 10px;
         position: absolute;
         align-items: center;
         text-overflow: ellipsis;
