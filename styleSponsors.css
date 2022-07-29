@@ -43,6 +43,8 @@
       justify-self: start;
       margin-left: 20px;
       cursor: pointer;
+      align-items: center;
+      justify-content: center;
       text-overflow: ellipsis;
   }
   
