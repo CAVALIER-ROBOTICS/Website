@@ -552,14 +552,9 @@
         }
         
         #CavBotsHang {
+            margin: 10px -22px;
             justify-content: center;
             width: 350px;
-        }
-    }
-
-    @media screen and (max-width: 360px) {
-        #CavBotsHang {
-            right: 10px;
         }
     }
 
