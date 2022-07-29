@@ -547,8 +547,12 @@
     }
 
     @media screen and (max-width: 480px) {
+        .about-btn {
+            left: 0%;
+        }
+        
         #CavBotsHang {
-            width: 300px;
+            width: 350px;
         }
     }
 
