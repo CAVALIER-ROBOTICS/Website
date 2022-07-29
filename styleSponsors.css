@@ -221,7 +221,7 @@
     margin: 0 auto;
     background: var(--blue);
     background-size: 40%;
-    /* border-bottom: var(--forestGreen) 60px solid; */
+    border-bottom: var(--forestGreen) 60px solid;
     border-radius: 0 0 50% 50%;
     background-position: top left;
     background-repeat: no-repeat;
@@ -316,9 +316,9 @@
         z-index: 1;
         max-width: 1920px;
         border-top: none;
-        /* border-bottom: var(--lightBlue) 10px solid; */
+        border-bottom: var(--forestGreen) 30px solid;
         border-radius: 0 0 0% 0%;
-        min-height: 91.5vh;
+        min-height: 92vh;
         position: relative;
         top: 65px;
     } 
@@ -501,8 +501,8 @@
 
 /* FOOTER CSS */
 .site-footer {
-    height: 65px;
-    border-top: var(--lightBlue) solid 10px;
+    height: 75px;
+    border-top: var(--lightBlue) solid 15px;
     background-color: var(--blue);
     display: flex;
 }
