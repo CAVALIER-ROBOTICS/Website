@@ -337,7 +337,7 @@
 
     #CavBotsGen {
         top: 60px;
-        width: 200px;
+        aspect-ratio: 1.7/1.2;
     }
 }
 
@@ -352,7 +352,7 @@
     }
 
     #CavBotsGen {
-        width: 200px;
+        width: 300px;
     }
 }
 
@@ -462,45 +462,9 @@
         border-radius: 8px;
     }
 
-    @media screen and (max-width: 1020px) {
-        .about {
-            background-image: url("/images/TestFinalBlue.jpg");
-            background-repeat: repeat;
-            background-size: 55%;
-            z-index: 1;
-            width: 100%;
-            max-width: 1920px;
-            min-height: 91.5vh;
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-          }
-
-        .about-container {
-            margin: 4px;
-        }
-
-        .about-container h1 {
-            text-align: center;
-        }
-    
-        .about-container h2 {
-            text-align: center;
-            top: 10px;
-        }
-    
-        .about-container p {
-            text-align: center;
-        }
-
+    @media screen and (max-width: 480px) {
         #CavBotsHang {
-            width: 480px;
-            height: 330px;
-            top: 10px;
-            left: 8%;
-            justify-content: center;
-            align-items: center;
+            width: 300px;
         }
     }
 
