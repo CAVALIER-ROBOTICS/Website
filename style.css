@@ -206,7 +206,7 @@
     font-family: 'sani Sans';
     font-style: normal;
     font-weight: 1000;
-    font-size: 12.2rem;
+    font-size: 12.1rem;
 
     color: var(--blue);
     top: 70px;
@@ -217,7 +217,7 @@
 
 .main-btn {
     font-size: 1.3rem;
-    top: 280px;
+    top: 290px;
     font-weight: 700;
     background-color: var(--blue);
     padding: 14px 32px;
