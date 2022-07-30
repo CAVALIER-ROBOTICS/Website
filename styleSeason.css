@@ -1,7 +1,7 @@
 :root {
   --blue: #85A0DE;
   --lightBlue: #AEC0EA;
-  --forestGreen: #2E5E47;
+  --gray: rgb(135, 134, 134);
   --darkBlue: #0c0444;
   --white: #fff;
   --black: #000;
@@ -20,10 +20,10 @@ html {
 
 .nav-container {
   width: 100%;
-  background-color: var(--blue);
+  background-color: var(--black);
   position: fixed;
   z-index: 4;
-  border-bottom: var(--darkBlue) solid 4px;
+  border-bottom: var(--gray) solid 4px;
 }
 
 .navbar {
@@ -37,14 +37,13 @@ html {
 }
 
 #navbar-logo {
-    color: var(--darkBlue);
+    color: var(--blue);
     text-decoration: none;
     font-size: calc(2vw - .1rem);
+    font-weight: 900;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
     text-overflow: ellipsis;
 }
 
@@ -59,7 +58,7 @@ html {
 }
 
 .nav-links {
-    color: var(--darkBlue);
+    color: var(--blue);
     font-size: 1.3rem;
     text-decoration: none;
 }
@@ -80,13 +79,14 @@ html {
 @media screen and (max-width: 1020px) {
   .nav-container {
       position: fixed;
-      background-color: var(--blue);
+      background-color: var(--black);
+      border-bottom: none;
   }
 
   .nav-menu {
       display: grid;
       grid-template-columns: auto;
-      background: var(--blue);
+      background: var(--black);
       margin: 0;
       width: 100%;
       height: 500px;
@@ -98,26 +98,28 @@ html {
       z-index: 3;
   }
 
+
   #navbar-logo {
-      color: var(--darkBlue);
+      color: var(--blue);
       margin-left: 20px;
       font-size: 2.2rem;
       top: 10px;
       position: absolute;
       align-items: center;
+      justify-content: center;
       text-overflow: ellipsis;
   }
 
   .nav-menu.active {
-      background: var(--blue);
+      background: var(--black);
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
   }
 
   .nav-links {
-      background-color: var(--blue);
-      color: var(--darkBlue);
+      background-color: var(--black);
+      color: var(--blue);
       text-align: center;
       line-height: 60px;
       width: 100%;
@@ -126,8 +128,8 @@ html {
   }
 
   .nav-links:hover {
-      background-color: var(--darkBlue);
-      color: var(--blue);
+      background-color: var(--black);
+      color: var(--white);
       transition: all 0.4s ease;
   }
 
@@ -167,9 +169,8 @@ html {
 
 /* SEASONS CSS */
 .seasons {
-    background-image: url("/images/TestFinalBlue.jpg");
-    background-repeat: repeat;
-    background-size: 20%;
+    background-color: var(--black);
+    min-height: 90vh;
     width: 100%;
     max-width: 1920px;
     min-height: 100vh;
@@ -180,9 +181,7 @@ html {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background: var(--blue);
-    background-size: 40%;
-    border-bottom: var(--forestGreen) 60px solid;
+    border-bottom: var(--gray) 60px solid;
     border-radius: 0 0 50% 50%;
     background-position: top left;
     background-repeat: no-repeat;
@@ -190,8 +189,8 @@ html {
     width: 100%;
     max-width: 1920px;
     padding: 0 50px;
-    top: 65px;
-    min-height: 91.5vh;
+    /* top: 65px; */
+    min-height: 100vh;
     position: relative;
 }
 
@@ -223,27 +222,24 @@ html {
 }
 
 @media screen and (max-width: 1020px) {
+  .seasons {
+      background-color: var(--black);
+      min-height: 90vh;
+  }
+  
   .seasons-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background-image: url("/images/TestFinalBlue.jpg");
-    background-repeat: repeat;
-    background-size: 55%;
     z-index: 1;
+    width: 100%;
     max-width: 1920px;
-    border-top: none;
-    border-bottom: var(--forestGreen) 90px solid;
-    border-radius: 0 0 0% 0%;
+    padding: 0 50px;
+    /* top: 65px; */
     min-height: 100vh;
     position: relative;
-    top: 65px;
   }
   
   .seasons-container h1 {
     font-size: 14vh;
-    top: 40px;
+    top: 100px;
     text-align: center;
     position: absolute;
   }
@@ -251,7 +247,7 @@ html {
   .seasons-container p {
     color: var(--white);
     font-size: 3vh;
-    top: 180px;
+    top: 200px;
     position: absolute;
   }
 }
@@ -265,30 +261,27 @@ html {
       width: 260px;
       height: 80px;
       border-style: solid;
-      top: 40px;
+      top: 100px;
       text-align: center;
       position: absolute;
   }
 
   .seasons-container p {
-    color: var(--white);
-    font-size: 2.8vh;
-    top: 140px;
-    max-width: 350px;
-    text-align: center;
-    position: absolute;
+      color: var(--white);
+      font-size: 2.8vh;
+      top: 200px;
+      max-width: 350px;
+      text-align: center;
+      position: absolute;
   }
 }
 
 /* TIMELINE */
   .timeline {
-      background-image: url("/images/TestFinalBlue.jpg");
-      background-repeat: repeat;
-      background-size: 20%;
+      background-color: var(--black);
       z-index: 1;
       width: 100%;
       max-width: 1920px;
-      padding: 0 30px;
       border-bottom: var(--lightBlue) 10px solid;
       border-radius: 0 0 0% 0%;
       min-height: 91.5vh;
@@ -298,86 +291,86 @@ html {
   
   /* literal vertical timeline */
   .timeline:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: var(--white);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: var(--white);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
   }
   
   .timeline-container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
   }
   
   /* circles on timeline */
   .timeline-container:after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: var(--forestGreen);  
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: var(--gray);  
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
   }
   
   .left {
-    left: 0;
+     left: 0;
   }
   
   .right {
-    left: 50%;
+      left: 50%;
   }
   
   /* arrows on boxes */
   .left:before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid var(--white);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--lightBlue);
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid var(--white);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent var(--lightBlue);
   }
   
   .right:before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid var(--white);
-    border-width: 10px 10px 10px 0;
-    border-color: transparent var(--lightBlue) transparent transparent;
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid var(--white);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent var(--lightBlue) transparent transparent;
   }
   
   /* circle outlines */
   .right:after {
-    left: -16px;
-    border: 4px solid var(--lightBlue);
+      left: -16px;
+      border: 4px solid var(--lightBlue);
   }
   .left:after{
-    border: 4px solid var(--lightBlue);
+      border : 4px solid var(--lightBlue);
   }
 
   /* literal white boxes */
   .timeline-content {
-    padding: 20px 30px;
-    background-color: var(--white);
-    position: relative;
-    border-radius: 10px;
+      padding: 20px 30px;
+      background-color: var(--white);
+      position: relative;
+      border-radius: 10px;
   }
   
 @media screen and (max-width: 1020px) {
