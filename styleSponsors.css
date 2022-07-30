@@ -366,7 +366,7 @@
   @media screen and (max-width: 480px) {    
     .sponsor-btn {
         top: 340px;
-        left: 20%;
+        right: 20%;
     }
   }
 
