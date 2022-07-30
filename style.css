@@ -181,7 +181,7 @@
     margin: 0 auto;
     background-image: url("/images/CavBotsBlack.jpg");
     background-size: 100%;
-    border-bottom: var(--gray) 60px solid;
+    border-bottom: var(--blue) 60px solid;
     border-radius: 0 0 50% 50%;
     background-position: top left;
     background-repeat: no-repeat;
@@ -208,7 +208,7 @@
     font-weight: 1000;
     font-size: 12.15rem;
 
-    color: var(--blue);
+    color: var(--gray);
     top: 70px;
     position: absolute;
     text-align: center;
