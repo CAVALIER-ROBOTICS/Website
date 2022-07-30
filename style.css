@@ -24,7 +24,7 @@
     background-color: var(--black);
     position: fixed;
     z-index: 4;
-    border-bottom: var(--gray) solid 4px;
+    border-bottom: var(--blue) solid 4px;
   }
   
   .navbar {
@@ -219,7 +219,7 @@
     font-size: 1.3rem;
     top: 290px;
     font-weight: 700;
-    background-color: var(--blue);
+    background-color: var(--gray);
     padding: 14px 32px;
     border: none;
     outline: none;
@@ -245,7 +245,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--gray);
+    background: var(--blue);
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -271,7 +271,7 @@
         margin: 0 auto;
         background-image: url("/images/CavBotsVer.jpg");
         background-size: 100%;
-        border-bottom: var(--gray) 60px solid;
+        border-bottom: var(--blue) 60px solid;
         border-radius: 0 0 60% 60%;
         background-position: top left;
         background-repeat: no-repeat;
@@ -301,7 +301,6 @@
     .main-btn {
         top: 220px;
         font-size: 1.5rem;
-        background-color: var(--blue);
     }
 }
 
@@ -314,7 +313,6 @@
 
     .main-btn {
         top: 210px;
-        background-color: var(--blue);
     }
 }
 
@@ -332,7 +330,6 @@
     .main-btn {
         top: 10px;
         position: absolute;
-        background-color: var(--blue);
     }
 }
 
@@ -362,14 +359,14 @@
     }
 
     .about-container h1 {
-        color: var(--blue);
+        color: var(--gray);
         z-index: 2;
         font-size: 5rem;
     }
 
     .about-container h2 {
         font-size: 2.5rem;
-        color: var(--gray);
+        color: var(--blue);
         z-index: 2;
     }
 
