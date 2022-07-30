@@ -2,7 +2,7 @@
     --blue: #85A0DE;
     --lightBlue: #AEC0EA;
     /* --gray: rgb(135, 134, 134); */
-    --gray: #2e5e47;
+    --forestGreen: #2e5e47;
     --darkBlue: #0c0444;
     --white: #fff;
     --black: #000;
@@ -21,10 +21,10 @@
   
   .nav-container {
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--blue);
     position: fixed;
     z-index: 4;
-    border-bottom: var(--blue) solid 4px;
+    border-bottom: var(--darkBlue) solid 4px;
   }
   
   .navbar {
@@ -38,7 +38,7 @@
   }
   
   #navbar-logo {
-      color: var(--blue);
+      color: var(--darkBlue);
       text-decoration: none;
       font-size: calc(2vw - .1rem);
       font-weight: 900;
@@ -59,7 +59,7 @@
   }
   
   .nav-links {
-      color: var(--blue);
+      color: var(--darkBlue);
       font-size: 1.3rem;
       text-decoration: none;
   }
@@ -80,14 +80,14 @@
 @media screen and (max-width: 1020px) {
     .nav-container {
         position: fixed;
-        background-color: var(--black);
+        background-color: var(--blue);
         border-bottom: none;
     }
   
     .nav-menu {
         display: grid;
         grid-template-columns: auto;
-        background: var(--black);
+        background: var(--blue);
         margin: 0;
         width: 100%;
         height: 500px;
@@ -101,7 +101,7 @@
   
 
     #navbar-logo {
-        color: var(--blue);
+        color: var(--darkBlue);
         margin-left: 20px;
         font-size: 2.2rem;
         top: 10px;
@@ -112,15 +112,15 @@
     }
   
     .nav-menu.active {
-        background: var(--black);
+        background: var(--blue);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
     }
   
     .nav-links {
-        background-color: var(--black);
-        color: var(--blue);
+        background-color: var(--blue);
+        color: var(--darkBlue);
         text-align: center;
         line-height: 60px;
         width: 100%;
@@ -129,8 +129,8 @@
     }
   
     .nav-links:hover {
-        background-color: var(--black);
-        color: var(--white);
+        background-color: var(--blue);
+        color: var(--forestGreen);
         transition: all 0.4s ease;
     }
   
@@ -169,8 +169,10 @@
   }
 
 /* HERO SECTION CSS */
-.main {
-    background-color: var(--black);
+.main {    
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-size: 20%;
+    background-repeat: repeat;
     min-height: 90vh;
 }
 
@@ -179,10 +181,9 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background-image: url("/images/CavBotsBlack.jpg");
-    background-size: 100%;
-    border-bottom: var(--blue) 60px solid;
+    background-color: var(--blue);
     border-radius: 0 0 50% 50%;
+    border-bottom: var(--forestGreen) 60px solid;
     background-position: top left;
     background-repeat: no-repeat;
     z-index: 1;
@@ -208,7 +209,7 @@
     font-weight: 1000;
     font-size: 12.15rem;
 
-    color: var(--gray);
+    color: var(--white);
     top: 70px;
     position: absolute;
     text-align: center;
@@ -219,7 +220,7 @@
     font-size: 1.3rem;
     top: 290px;
     font-weight: 700;
-    background-color: var(--gray);
+    background-color: var(--darkBlue);
     padding: 14px 32px;
     border: none;
     outline: none;
@@ -245,7 +246,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--blue);
+    background: var(--forestGreen);
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -259,22 +260,15 @@
 }
 
 @media screen and (max-width: 1020px) {    
-    .main {
-        background-color: var(--black);
+    .main {    
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 40%;
+        background-repeat: repeat;
         min-height: 90vh;
+        border-top: var(--darkBlue) solid 10px;
     }
     
     .main-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        background-image: url("/images/CavBotsVer.jpg");
-        background-size: 100%;
-        border-bottom: var(--blue) 60px solid;
-        border-radius: 0 0 60% 60%;
-        background-position: top left;
-        background-repeat: no-repeat;
         z-index: 1;
         width: 100%;
         max-width: 1920px;
@@ -305,6 +299,13 @@
 }
 
 @media screen and (max-width: 760px) {
+    .main {    
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 55%;
+        background-repeat: repeat;
+        min-height: 90vh;
+    }
+    
     .main-content h1 {
         text-align: center;
         font-size: calc(17vw - .05rem);
@@ -319,7 +320,7 @@
 @media screen and (max-width: 480px) {
     .main-container {
         background-image: none;
-        border-bottom: var(--blue) 60px solid;
+        border-bottom: var(--forestGreen) 60px solid;
     }
     
     .main-content h1 {
@@ -335,7 +336,10 @@
 
 /* About Us Section CSS */
     .about {
-        background-color: var(--black);
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 20%;
+        background-repeat: repeat;
+        min-height: 90vh;
         z-index: 1;
         width: 100%;
         max-width: 1920px;
@@ -359,7 +363,7 @@
     }
 
     .about-container h1 {
-        color: var(--gray);
+        color: var(--forestGreen);
         z-index: 2;
         font-size: 5rem;
     }
@@ -383,9 +387,10 @@
 
     .about-btn {
         font-size: 1.3rem;
-        background-color: var(--blue);
+        background-color: var(--lightBlue);
         padding: 14px 32px;
         border-radius: 8px;
+        border-color: var(--blue);
         color: #fff;
         cursor: pointer;
         position: relative;
@@ -411,7 +416,7 @@
         left: 0;
         width: 0;
         height: 100%;
-        background: var(--gray);
+        background: var(--forestGreen);
         transition: all 0.35s;
         border-radius: 4px;
     }
@@ -439,7 +444,9 @@
 
     @media screen and (max-width: 1020px) {
         .about {
-            background-color: var(--black);
+            background-image: url("/images/TestFinalBlue.jpg");
+            background-size: 40%;
+            background-repeat: repeat;
             z-index: 1;
             width: 100%;
             max-width: 1920px;
@@ -477,9 +484,11 @@
         }
     }
 
-    @media screen and (max-width: 1020px) {
-        .about {
-            background: var(--black);
+    @media screen and (max-width: 760px) {
+        .about {  
+            background-image: url("/images/TestFinalBlue.jpg");
+            background-size: 55%;
+            background-repeat: repeat;
             z-index: 1;
             width: 100%;
             max-width: 1920px;
@@ -558,13 +567,13 @@
     }
 
     .contact-flow h2 {
-        color: var(--black);
+        color: var(--darkBlue);
         font-size: 60px;
         text-align: center;
     }
 
     .contact-flow h6 {
-        color: var(--black);
+        color: var(--darkBlue);
         font-size: 20px;
         text-align: center;
     }
@@ -575,7 +584,7 @@
     }
 
     .fa-brands {
-        color: var(--black);
+        color: var(--darkBlue);
         text-decoration: none;
         padding: 0.3em;
         size: 10px;
@@ -583,7 +592,7 @@
     }
 
     .fa-solid {
-        color: var(--black);
+        color: var(--darkBlue);
         text-decoration: none;
         padding: 0.3em;
         font-size: 1.5em;
@@ -604,8 +613,10 @@
 
     /* FOOTER CSS */
     .site-footer {
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 20%;
+        background-repeat: repeat;  
         height: 65px;
-        background-color: var(--black);
         display: flex;
     }
 
@@ -629,7 +640,9 @@
 
     @media screen and (max-width: 1020px) {
         .footer-container {
-            background: var(--black);
+            background-image: url("/images/TestFinalBlue.jpg");
+            background-size: 40%;
+            background-repeat: repeat;
             z-index: 1;
             width: 100%;
             max-width: 1920px;
@@ -637,5 +650,13 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .footer-container{
+            background-image: url("/images/TestFinalBlue.jpg");
+            background-size: 55%;
+            background-repeat: repeat;
         }
     }

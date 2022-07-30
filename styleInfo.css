@@ -1,7 +1,8 @@
 :root {
   --blue: #85A0DE;
   --lightBlue: #AEC0EA;
-  --gray: rgb(135, 134, 134);
+  /* --gray: rgb(135, 134, 134); */
+  --forestGreen: #2e5e47;
   --darkBlue: #0c0444;
   --white: #fff;
   --black: #000;
@@ -20,10 +21,10 @@ html {
 
 .nav-container {
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--blue);
   position: fixed;
   z-index: 4;
-  border-bottom: var(--gray) solid 4px;
+  border-bottom: var(--darkBlue) solid 4px;
 }
 
 .navbar {
@@ -37,7 +38,7 @@ html {
 }
 
 #navbar-logo {
-    color: var(--blue);
+    color: var(--darkBlue);
     text-decoration: none;
     font-size: calc(2vw - .1rem);
     font-weight: 900;
@@ -58,7 +59,7 @@ html {
 }
 
 .nav-links {
-    color: var(--blue);
+    color: var(--darkBlue);
     font-size: 1.3rem;
     text-decoration: none;
 }
@@ -79,14 +80,14 @@ html {
 @media screen and (max-width: 1020px) {
   .nav-container {
       position: fixed;
-      background-color: var(--black);
+      background-color: var(--blue);
       border-bottom: none;
   }
 
   .nav-menu {
       display: grid;
       grid-template-columns: auto;
-      background: var(--black);
+      background: var(--blue);
       margin: 0;
       width: 100%;
       height: 500px;
@@ -100,7 +101,7 @@ html {
 
 
   #navbar-logo {
-      color: var(--blue);
+      color: var(--darkBlue);
       margin-left: 20px;
       font-size: 2.2rem;
       top: 10px;
@@ -111,15 +112,15 @@ html {
   }
 
   .nav-menu.active {
-      background: var(--black);
+      background: var(--blue);
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
   }
 
   .nav-links {
-      background-color: var(--black);
-      color: var(--blue);
+      background-color: var(--blue);
+      color: var(--darkBlue);
       text-align: center;
       line-height: 60px;
       width: 100%;
@@ -128,8 +129,8 @@ html {
   }
 
   .nav-links:hover {
-      background-color: var(--black);
-      color: var(--white);
+      background-color: var(--blue);
+      color: var(--forestGreen);
       transition: all 0.4s ease;
   }
 
@@ -169,11 +170,12 @@ html {
   
   /* SPONSOR INFO CSS */
   .sponsorInfo {
-      background-color: var(--black);
+      background-image: url("/images/TestFinalBlue.jpg");
+      background-size: 20%;
+      background-repeat: repeat;
       min-height: 90vh;
       width: 100%;
       max-width: 1920px;
-      min-height: 100vh;
   }
   
   .sponsorInfo-container {
@@ -181,8 +183,9 @@ html {
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-      border-bottom: var(--gray) 60px solid;
+      background-color: var(--blue);
       border-radius: 0 0 50% 50%;
+      border-bottom: var(--forestGreen) 60px solid;
       background-position: top left;
       background-repeat: no-repeat;
       z-index: 1;
@@ -191,7 +194,7 @@ html {
       padding: 0 50px;
       /* top: 65px; */
       min-height: 100vh;
-      position: relative;
+      position: relative; 
   }
   
   .sponsorInfo-container h1 {
@@ -223,7 +226,7 @@ html {
 
   .sponsorInfo-btn {
     font-size: 1.3rem;
-    background-color: var(--blue);
+    background-color: var(--darkBlue);
     padding: 14px 32px;
     border: none;
     outline: none;
@@ -250,7 +253,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--gray);
+    background: var(--forestGreen);
     transition: all 0.35s;
     border-radius: 15px;
   }
@@ -265,8 +268,11 @@ html {
   
   @media screen and (max-width: 1020px) {
     .sponsorInfo {
-      background-color: var(--black);
+      background-image: url("/images/TestFinalBlue.jpg");
+      background-size: 40%;
+      background-repeat: repeat;
       min-height: 90vh;
+      border-top: var(--darkBlue) solid 10px;
     }  
     
     .sponsorInfo-container {
@@ -274,7 +280,6 @@ html {
       width: 100%;
       max-width: 1920px;
       padding: 0 50px;
-      /* top: 65px; */
       min-height: 100vh;
       position: relative;
     } 
@@ -301,10 +306,17 @@ html {
   }
 
 @media screen and (max-width: 760px) {    
+    .sponsorInfo {
+      background-image: url("/images/TestFinalBlue.jpg");
+      background-size: 55%;
+      background-repeat: repeat;
+      min-height: 90vh;
+    }  
+
     .sponsorInfo-container h1 {
       color: var(--white);
       font-size: 3rem;
-      border: solid var(--lightBlue) 10px;
+      border: solid var(--darkBlue) 10px;
       border-radius: 30px;
       width: 360px;
       height: 80px;
@@ -327,7 +339,6 @@ html {
       margin: auto 20px;
       font-size: 1rem;
       padding: 12px 14px;
-      background-color: var(--lightBlue);
       top: 410px;
     }
   }
@@ -364,7 +375,10 @@ html {
 
   /* SPONSOR LEVELS */
   .levels {
-      background-color: var(--black);
+      background-image: url("/images/TestFinalBlue.jpg");
+      background-size: 20%;
+      background-repeat: repeat;
+      min-height: 90vh;
       z-index: 1;
       width: 100%;
       max-width: 1920px;
@@ -397,7 +411,7 @@ html {
     flex-direction: column;
     padding: 20px 30px;
     border: 5px solid var(--lightBlue);
-    background-color: var(--gray);
+    background-color: var(--darkBlue);
     position: relative;
     border-radius: 20px;
   }
@@ -413,7 +427,7 @@ html {
     .levels {
       background-image: url("/images/TestFinalBlue.jpg");
       background-repeat: repeat;
-      background-size: 55%;
+      background-size: 40%;
     }
   
     .levels-container {
@@ -432,6 +446,14 @@ html {
     .right {
       left: 0%;
     }
+}
+
+@media scree and (max-width: 760px) {
+  .levels {
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-size: 55%;
+    background-repeat: repeat;
+  }
 }
 
 /* FOOTER CSS */
