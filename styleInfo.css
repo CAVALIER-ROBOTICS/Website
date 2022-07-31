@@ -301,7 +301,7 @@ html {
     .sponsorInfo-btn {
         font-size: 1.2rem;
         padding: 12px 28px;
-        top: 460px;
+        top: 440px;
     }
   }
 
@@ -339,7 +339,7 @@ html {
       margin: auto 20px;
       font-size: 1rem;
       padding: 12px 14px;
-      top: 530px;
+      top: 510px;
     }
   }
 
@@ -362,14 +362,14 @@ html {
 
     .sponsorInfo-btn {
         font-size: 1rem;
-        top: 510px;
+        top: 520px;
     }
   }
 
   @media screen and (max-width: 480px) {   
     .sponsorInfo-btn {
         font-size: 1rem;
-        top: 450px;
+        top: 460px;
     }
   }
 
