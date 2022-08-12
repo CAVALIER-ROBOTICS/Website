@@ -266,7 +266,7 @@
     .outreach-container h1 {
         color: var(--white);
         font-size: 3rem;
-        border: solid var(--lightBlue) 10px;
+        border: solid var(--darkBlue) 10px;
         border-radius: 30px;
         width: 260px;
         height: 80px;
