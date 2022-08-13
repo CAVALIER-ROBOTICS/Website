@@ -229,8 +229,8 @@ html {
   justify-content: center;
   align-items: center;
   top: 150px;
-  width: 310px;
-  height: 180px;
+  width: 450px;
+  height: 220px;
   z-index: 3;
   border: 8px solid var(--darkBlue);
   border-radius: 8px;
@@ -311,7 +311,7 @@ html {
 
 @media screen and (max-width: 550px) {
   #CavBotsGen {
-    top: 130px;
+    top: 120px;
     width: 260px;
     height: 160px;
   }
