@@ -329,7 +329,7 @@ html {
     .sponsorInfo-container p {
       color: var(--white);
       font-size: 2.8vh;
-      top: 200px;
+      top: 250px;
       max-width: 350px;
       min-height: 100px;
       position: absolute;
@@ -339,7 +339,7 @@ html {
       margin: auto 20px;
       font-size: 1rem;
       padding: 12px 14px;
-      top: 510px;
+      top: 520px;
     }
   }
 

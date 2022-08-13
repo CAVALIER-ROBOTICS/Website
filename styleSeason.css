@@ -265,12 +265,12 @@ html {
   .seasons-container p {
     color: var(--white);
     font-size: 3vh;
-    top: 200px;
+    top: 220px;
     position: absolute;
   }
 
   #CavBotsGen {
-    top: 110px;
+    top: 130px;
   }
 }
 

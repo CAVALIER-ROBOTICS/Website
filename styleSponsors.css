@@ -328,14 +328,14 @@
     .sponsors-container p {
         color: var(--white);
         font-size: 3vh;
-        top: 230px;
+        top: 250px;
         position: absolute;
     }
 
     .sponsor-btn {
         font-size: 1.2rem;
         padding: 12px 28px;
-        top: 330px;
+        top: 350px;
     }
   }
 
