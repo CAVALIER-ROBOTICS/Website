@@ -229,8 +229,8 @@ html {
   justify-content: center;
   align-items: center;
   top: 150px;
-  width: 450px;
-  height: 240px;
+  width: 410px;
+  height: 214px;
   z-index: 3;
   border: 8px solid var(--darkBlue);
   border-radius: 8px;
