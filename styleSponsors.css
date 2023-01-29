@@ -430,6 +430,7 @@
         background-color: var(--darkBlue);
         position: relative;
         border-radius: 20px;
+        max-width: 800px;
     }
 
     #sponsorPic {
@@ -511,13 +512,38 @@
         margin: 10px auto;
     }
 
-@media screen and (max-width: 1020px) {
-    .sponsorsFlexbox-container {
-        background-image: url("/images/TestFinalBlue.jpg");
-        background-repeat: repeat;
-        background-size: 55%;
+    @media screen and (max-width: 1020px) {
+        .sponsorsFlexbox-container {
+            background-image: url("/images/TestFinalBlue.jpg");
+            background-repeat: repeat;
+            background-size: 55%;
+        }
+      } 
+
+    @media screen and (max-width: 500px) {
+        .list-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 30px;
+            border: none;
+            background-color: transparent;
+            position: relative;
+            border-radius: 20px;
+            max-width: 800px;
+        }
+
+        #sponsorPic {
+            max-width: 250px;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        .sponsor-item h1 {
+            font-size: calc(8vw - .005rem);
+        }
     }
-  } */
 
 FOOTER CSS
 .footer-container {
