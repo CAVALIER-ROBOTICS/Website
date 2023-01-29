@@ -385,7 +385,7 @@
   }
 
 /* SPONSORS LIST */
-    /* .sponsorsFlexbox-container {
+    .sponsorsFlexbox-container {
         background-image: url("/images/TestFinalBlue.jpg");
         background-repeat: repeat;
         background-size: 20%;
@@ -420,7 +420,26 @@
         align-items: center;
     }
 
-    .platinum-box {
+    .list-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px;
+        border: 10px solid var(--lightBlue);
+        background-color: var(--darkBlue);
+        position: relative;
+        border-radius: 20px;
+    }
+
+    #sponsorPic {
+        max-width: 350px;
+        min-height: 125px;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+    /* .platinum-box {
         background-color: var(--white);
         max-width: 800px;
         border: 8px solid var(--lightBlue);
@@ -454,7 +473,7 @@
         border-radius: 20px;
         transition: all .3s ease;
         margin: 10px auto;
-    }
+    } */
 
     .silver-box {
         background-color: var(--white);
@@ -500,14 +519,7 @@
     }
   } */
 
-/* FOOTER CSS */
-.site-footer {
-    height: 75px;
-    border-top: var(--lightBlue) solid 10px;
-    background-color: var(--blue);
-    display: flex;
-}
-
+FOOTER CSS
 .footer-container {
     z-index: 1;
     width: 100%;
