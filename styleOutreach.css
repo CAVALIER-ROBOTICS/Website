@@ -349,6 +349,20 @@
     color: var(--white)
 }
 
+.list-content a {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--white)
+}
+
+.list-content a:hover {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--lightBlue)
+}
+
 #OutreachPic {
     max-width: 400px;
     border-radius: 20px;
