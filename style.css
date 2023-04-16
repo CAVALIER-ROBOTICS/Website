@@ -322,8 +322,12 @@
         /* width: 500px; */
     }
 
+    .main-content img{
+        top: 200px;
+    }
+
     .main-btn {
-        top: 320px;
+        top: 380px;
     }
 }
 
