@@ -319,8 +319,6 @@
         text-align: center;
         justify-content: center;
         font-size: calc(14vw - .05rem);
-        max-width: 400px;
-        /* width: 500px; */
     }
 
     .main-content img{
@@ -328,7 +326,7 @@
     }
 
     .main-btn {
-        top: 260px;
+        top: 400px;
     }
 }
 
