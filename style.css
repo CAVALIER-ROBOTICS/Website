@@ -317,11 +317,6 @@
         justify-content: center;
         font-size: calc(14vw - .05rem);
     }
-
-    .main-content img{
-        top: 100px;
-    }
-
 }
 
 @media screen and (max-width: 480px) {
