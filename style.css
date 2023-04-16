@@ -202,12 +202,21 @@
     /* position: relative; */
 }
 
+.main-contnet img {
+    display: flex;
+    margin-left: 55%;  
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10%;
+}
+
 .main-content h1 {
     /* CAVBOTS 7492 */
     font-family: 'sani Sans';
     font-style: normal;
     font-weight: 1000;
-    font-size: 14.5rem;
+    /* font-size: 14.5rem; */
+    font-size: 10rem;
 
     color: var(--white);
     top: 70px;
