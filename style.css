@@ -318,13 +318,10 @@
         font-size: calc(14vw - .05rem);
     }
 
-    /* .main-content img{
-        top: -250px;
-    } */
-/* 
-    .main-btn {
-        top: 200px;
-    } */
+    .main-content img{
+        top: 100px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
