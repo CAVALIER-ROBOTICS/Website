@@ -320,10 +320,11 @@
 
     .main-content img{
         position: relative;
-        top: 30px;
+        /* top: 30px; */
     }
 
     .main-btn {
+        position: relative;
         top: 200px;
     }
 }
