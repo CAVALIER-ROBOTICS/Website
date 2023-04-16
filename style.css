@@ -202,7 +202,7 @@
     /* position: relative; */
 }
 
-.main-contnet img {
+#CavBotsLogo {
     position: relative;
     display: flex;
     margin-left: 55%;  
