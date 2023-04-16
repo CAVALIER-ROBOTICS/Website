@@ -282,7 +282,7 @@
         width: 100%;
         max-width: 1920px;
         padding: 0 50px;
-        top: 65px;
+        /* top: 65px; */
         min-height: 100vh;
         position: relative;
     }
@@ -302,7 +302,7 @@
     }
 
     .main-btn {
-        top: 500px;
+        top: 200px;
         font-size: 1.5rem;
     }
 }
