@@ -203,6 +203,7 @@
 }
 
 .main-contnet img {
+    position: relative;
     display: flex;
     margin-left: 55%;  
     justify-content: center;
