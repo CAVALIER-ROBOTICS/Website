@@ -318,10 +318,9 @@
         font-size: calc(14vw - .05rem);
     }
 
-    .main-content img{
-        position: absolute;
+    /* .main-content img{
         top: -250px;
-    }
+    } */
 
     .main-btn {
         top: 200px;
