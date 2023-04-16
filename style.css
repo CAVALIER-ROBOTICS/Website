@@ -319,8 +319,8 @@
     }
 
     .main-content img{
-        position: absolute;
-        top: 10px;
+        position: relative;
+        top: 100px;
     }
 
     .main-btn {
