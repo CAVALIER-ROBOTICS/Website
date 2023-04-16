@@ -298,11 +298,11 @@
     .main-content h1 {
         font-size: calc(14vw - .05rem);
         position: absolute;
-        top: -180px;
+        top: 200px;
     }
 
     .main-btn {
-        top: 220px;
+        top: 300px;
         font-size: 1.5rem;
     }
 }
