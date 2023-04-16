@@ -202,13 +202,11 @@
     /* position: relative; */
 }
 
-/* .main-content img {
-    display: flex;
+.main-content img {
     justify-content: center;
     align-items: center; 
-    position: absolute;
     top: 100px;
-} */
+}
 
 .main-content h1 {
     /* CAVBOTS 7492 */
