@@ -321,12 +321,12 @@
 
     .main-content img{
         position: absolute;
-        top: 20px;
+        top: -10px;
     }
 
     .main-btn {
         position: relative;
-        top: 300px;
+        top: 320px;
     }
 }
 
