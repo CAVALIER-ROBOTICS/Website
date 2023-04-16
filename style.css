@@ -313,7 +313,6 @@
     }
     
     .main-content h1 {
-        position: absolute;
         text-align: center;
         justify-content: center;
         font-size: calc(14vw - .05rem);
@@ -321,11 +320,10 @@
 
     .main-content img{
         position: absolute;
-        top: 60px;
+        top: -100px;
     }
 
     .main-btn {
-        position: relative;
         top: 200px;
     }
 }
