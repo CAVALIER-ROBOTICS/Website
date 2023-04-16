@@ -298,7 +298,7 @@
     .main-content h1 {
         font-size: calc(14vw - .05rem);
         position: absolute;
-        top: 200px;
+        top: 50px;
     }
 
     .main-btn {
