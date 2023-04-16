@@ -282,9 +282,9 @@
         width: 100%;
         max-width: 1920px;
         padding: 0 50px;
-        /* top: 65px; */
+        top: 65px;
         min-height: 100vh;
-        position: relative;
+        /* position: relative; */
     }
 
     .main-content {
@@ -298,7 +298,7 @@
     .main-content h1 {
         font-size: calc(14vw - .05rem);
         position: absolute;
-        top: 50px;
+        top: 200px;
     }
 
     .main-btn {
