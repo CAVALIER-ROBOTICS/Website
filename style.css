@@ -202,7 +202,15 @@
     /* position: relative; */
 }
 
-.main-contnet img {
+/* .main-contnet img {
+    display: flex;
+    margin-left: 55%;  
+    justify-content: center;
+    align-items: center; 
+    top: 130px;
+} */
+
+.main-content img {
     display: flex;
     margin-left: 55%;  
     justify-content: center;
@@ -320,10 +328,6 @@
         justify-content: center;
         font-size: calc(17vw - .05rem);
         /* width: 500px; */
-    }
-
-    .main-content img{
-        top: 410px;
     }
 
     .main-btn {
