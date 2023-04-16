@@ -227,7 +227,7 @@
 
 .main-btn {
     font-size: 1.3rem;
-    top: 280px;
+    top: 250px;
     font-weight: 700;
     background-color: var(--darkBlue);
     padding: 14px 32px;
@@ -236,7 +236,7 @@
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     transition: all 0.35s;
     z-index: 2;
 }
