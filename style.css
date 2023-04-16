@@ -319,7 +319,8 @@
     }
 
     .main-content img{
-        top: 700px;
+        position: absolute;
+        top: 150px;
     }
 
     .main-btn {
