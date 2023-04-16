@@ -313,13 +313,14 @@
     }
     
     .main-content h1 {
+        position: absolute;
         text-align: center;
         justify-content: center;
         font-size: calc(14vw - .05rem);
     }
 
     .main-content img{
-        position: relative;
+        position: absolute;
         top: 20px;
     }
 
