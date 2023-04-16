@@ -319,11 +319,12 @@
         text-align: center;
         justify-content: center;
         font-size: calc(14vw - .05rem);
+        max-width: 400px;
         /* width: 500px; */
     }
 
     .main-content img{
-        top: 200px;
+        top: 40px;
     }
 
     .main-btn {
