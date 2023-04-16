@@ -203,7 +203,6 @@
 }
 
 #CavBotsLogo {
-    position: relative;
     display: flex;
     margin-left: 55%;  
     justify-content: center;
@@ -228,7 +227,7 @@
 
 .main-btn {
     font-size: 1.3rem;
-    top: 405px;
+    top: 410px;
     font-weight: 700;
     background-color: var(--darkBlue);
     padding: 14px 32px;
