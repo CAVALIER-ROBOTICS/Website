@@ -317,12 +317,13 @@
     
     .main-content h1 {
         text-align: center;
+        justify-content: center;
         font-size: calc(17vw - .05rem);
-        width: 500px;
+        /* width: 500px; */
     }
 
     .main-btn {
-        top: 210px;
+        top: 320px;
     }
 }
 
