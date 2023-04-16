@@ -207,7 +207,7 @@
     justify-content: center;
     align-items: center; 
     position: relative;
-    top: 130px;
+    top: 135px;
 }
 
 .main-content h1 {
@@ -318,7 +318,7 @@
     .main-content h1 {
         text-align: center;
         justify-content: center;
-        font-size: calc(14vw - .05rem);
+        font-size: calc(14vw - .025rem);
         /* width: 500px; */
     }
 
