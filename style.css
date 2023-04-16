@@ -284,17 +284,20 @@
         padding: 0 50px;
         /* top: 65px; */
         min-height: 100vh;
+        position: relative;
     }
 
     .main-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* position: relative; */
         left: 0%;
     }
     
     .main-content h1 {
         font-size: calc(14vw - .05rem);
+        position: absolute;
         top: 75px;
     }
 
@@ -316,6 +319,14 @@
         text-align: center;
         justify-content: center;
         font-size: calc(14vw - .05rem);
+    }
+
+    .main-content img{
+        top: 40px;
+    }
+
+    .main-btn {
+        top: 400px;
     }
 }
 
