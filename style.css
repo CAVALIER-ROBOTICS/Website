@@ -307,11 +307,10 @@
      
     .main-content h1 {
         font-size: calc(14vw - .05rem);
-        top: -180px;
+        top: -300px;
     }
 
-   .logo-container img{ 
-        top: 300px;
+   .logo-container img{     
         width: 250px;
    }
 
