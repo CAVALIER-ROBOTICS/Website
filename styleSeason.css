@@ -507,10 +507,13 @@ html {
     margin: auto 40px;
     justify-content: center;
     align-items: center;
+    width: 20px;
 }
 
 .logo-right {
     margin: auto 40px;
     justify-content: center;
     align-items: center;
+    width: 20px;
 }
+
