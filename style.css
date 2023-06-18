@@ -50,7 +50,7 @@
   
   .nav-menu {
       display: grid;
-      grid-template-columns: repeat(6, auto);
+      grid-template-columns: repeat(7, auto);
       list-style: none;
       text-align: center;
       align-items: center;
@@ -64,6 +64,10 @@
       text-decoration: none;
   }
   
+  .nav-logo {
+    visibility: hidden;
+  }
+
   .nav-links:hover {
       color: var(--white);
       transition: all 0.2s ease-out;
@@ -99,6 +103,9 @@
         z-index: 3;
     }
   
+    .nav-logo {
+        visibility: visible;
+      }
 
     #navbar-logo {
         color: var(--darkBlue);
