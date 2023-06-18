@@ -335,7 +335,7 @@
     }
 
     .main-btn {
-        top: 640px;
+        top: 1040px;
     }
 }
 
@@ -351,8 +351,7 @@
     }
     
     .main-btn {
-        top: 10px;
-        position: absolute;
+        top: 100px;
     }
 }
 
