@@ -246,9 +246,9 @@
 
   .sponsors-container p {
     color: var(--white);
-    font-size: 3vh;
+    font-size: 3rem;
     border: solid transparent 1px;
-    top: 240px;
+    top: 260px;
     width: 620px;
     align-items: center;
     text-align: center;
@@ -265,10 +265,10 @@
     border-radius: 15px;
     color: #ffff;
     cursor: pointer;
-    top: 340px;
+    top: 175px;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     transition: all 0.35s;
     z-index: 2;
   }
@@ -300,6 +300,26 @@
     width: 100%;
   }
   
+
+@media screen and (max-height: 900px) {
+    .sponsors-container p {
+        font-size: 3rem;
+    }
+    .sponsor-btn {
+        top: 100px
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .sponsors-container p {
+        font-size: 1.5rem;
+    }
+    .sponsor-btn {
+        top: 100px
+    }
+}
+
+
 @media screen and (max-width: 1020px) {
     .sponsors {
         background-image: url("/images/TestFinalBlue.jpg");
@@ -335,7 +355,7 @@
     .sponsor-btn {
         font-size: 1.2rem;
         padding: 12px 28px;
-        top: 350px;
+        /* top: 350px; */
     }
   }
 
@@ -350,11 +370,11 @@
     .sponsors-container h1 {
         color: var(--white);
         font-size: 3rem;
-        border: solid var(--darkBlue) 10px;
-        border-radius: 30px;
+        /* border: solid var(--darkBlue) 10px; */
+        /* border-radius: 30px; */
         width: 260px;
         height: 80px;
-        border-style: solid;
+        /* border-style: solid; */
         top: 100px;
         text-align: center;
         position: absolute;
@@ -373,13 +393,13 @@
         margin: auto 20px;
         font-size: 1rem;
         padding: 12px 14px;
-        top: 370px;
+        /* top: 370px; */
     }
   }
 
   @media screen and (max-width: 480px) {    
     .sponsor-btn {
-        top: 340px;
+        /* top: 340px; */
         right: 1%;
     }
   }
