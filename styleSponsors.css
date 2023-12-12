@@ -459,7 +459,14 @@
         padding: 5px 10px;
     }
 
-    /* .platinum-box {
+    #sponsorPicLarge {
+        max-width: 1500px;
+        min-height: 150px;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+    .platinum-box {
         background-color: var(--white);
         max-width: 800px;
         border: 8px solid var(--lightBlue);
@@ -468,7 +475,7 @@
     }
 
     .platinum-box:hover {
-        cursor: pointer;
+        cursor: default;
         background-color: #d9d6d6;
         max-width: 800px;
         border: 8px solid #aeacac;
@@ -486,14 +493,14 @@
     }
  
     .gold-box:hover {
-        cursor: pointer;
+        cursor: default;
         background-color: #FBD573;
         max-width: 800px;
         border: 8px solid #CCA300;
         border-radius: 20px;
         transition: all .3s ease;
         margin: 10px auto;
-    } */
+    }
 
     .silver-box {
         background-color: var(--white);
@@ -522,7 +529,7 @@
     }
 
     .bronze-box:hover {
-        cursor: pointer;
+        cursor: default;
         background-color: #B87333;
         max-width: 800px;
         border: 8px solid #7c4f24;
