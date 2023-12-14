@@ -459,6 +459,7 @@
         padding: 5px 10px;
     }
 
+
     #sponsorPicLarge {
         max-width: 1500px;
         min-height: 150px;
@@ -484,7 +485,7 @@
         margin: 10px auto;
     }
 
-    .gold-box {
+    /* .gold-box {
         background-color: var(--white);
         max-width: 800px;
         border: 8px solid var(--lightBlue);
