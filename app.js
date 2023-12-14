@@ -8,3 +8,4 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
     console.log("Test");
 })
+
