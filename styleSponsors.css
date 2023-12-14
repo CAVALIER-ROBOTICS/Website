@@ -570,12 +570,12 @@
             font-size: calc(8vw - .005rem);
         }
 
-        #sponsorPicLarge {
+        /* #sponsorPicLarge {
             max-width: 300px;
             min-height: 150px;
             border-radius: 20px;
             padding: 5px 10px;
-        }
+        } */
     }
 
 FOOTER CSS
