@@ -180,6 +180,7 @@ html {
   
   .sponsorInfo-container {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       margin: 0 auto;
@@ -215,7 +216,7 @@ html {
     color: var(--white);
     font-size: 3vh;
     border: solid transparent 1px;
-    top: 240px;
+    top: 225px;
     width: 620px;
     align-items: center;
     text-align: center;
@@ -224,7 +225,7 @@ html {
     position: absolute;
 }
 
-  .sponsorInfo-btn {
+  .sponsorInfo-btn { /* main */
     font-size: 1.3rem;
     background-color: var(--darkBlue);
     padding: 14px 32px;
@@ -233,8 +234,8 @@ html {
     border-radius: 15px;
     color: #ffff;
     cursor: pointer;
-    top: 460px;
-    position: absolute;
+    top: 130px;
+    position: relative;
     transition: all 0.35s;
     z-index: 2;
   }
@@ -294,14 +295,14 @@ html {
     .sponsorInfo-container p {
         color: var(--white);
         font-size: 3vh;
-        top: 240px;
+        top: 220px;
         position: absolute;
     }
 
     .sponsorInfo-btn {
         font-size: 1.2rem;
         padding: 12px 28px;
-        top: 460px;
+        /* top: 460px; */
     }
   }
 
@@ -316,11 +317,11 @@ html {
     .sponsorInfo-container h1 {
       color: var(--white);
       font-size: 3rem;
-      border: solid var(--darkBlue) 10px;
-      border-radius: 30px;
+      /* border: solid var(--darkBlue) 10px; */
+      /* border-radius: 30px; */
       width: 360px;
       height: 80px;
-      border-style: solid;
+      /* border-style: solid; */
       top: 100px;
       text-align: center;
       position: absolute;
@@ -329,7 +330,7 @@ html {
     .sponsorInfo-container p {
       color: var(--white);
       font-size: 2.8vh;
-      top: 200px;
+      top: 175px;
       max-width: 350px;
       min-height: 100px;
       position: absolute;
@@ -339,7 +340,7 @@ html {
       margin: auto 20px;
       font-size: 1rem;
       padding: 12px 14px;
-      top: 510px;
+      /* top: 510px; */
     }
   }
 
@@ -354,7 +355,7 @@ html {
     .sponsorInfo-container p {
         color: var(--white);
         font-size: 2.8vh;
-        top: 200px;
+        top: 175px;
         max-width: 340px;
         text-align: center;
         position: absolute;
@@ -362,14 +363,14 @@ html {
 
     .sponsorInfo-btn {
         font-size: 1rem;
-        top: 530px;
+        /* top: 530px; */
     }
   }
 
   @media screen and (max-width: 480px) {   
     .sponsorInfo-btn {
         font-size: 1rem;
-        top: 590px;
+        /* top: 590px; */
     }
   }
 
