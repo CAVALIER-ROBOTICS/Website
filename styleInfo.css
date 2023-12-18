@@ -409,7 +409,7 @@ html {
     }
   
     #Platinum {
-      font-size: 11vh;
+      font-size:10vh;
       font-weight: bolder;
       color: var(--platinum);
     }
