@@ -6,6 +6,10 @@
   --darkBlue: #0c0444;
   --white: #fff;
   --black: #000;
+  --bronze: #CD7F32;
+  --gold: #FFD700;
+  --platinum: #E5E4E2;
+  --silver: #E5E4E2;
 }
 
 * {
@@ -266,6 +270,28 @@ html {
   .sponsorInfo-btn:hover:after {
     width: 100%;
   }
+
+  #Bronze {
+    font-size: 14vh;
+    color: var(--bronze);
+  }
+
+  #Silver {
+    font-size: 14vh;
+    color: var(--silver);
+  }
+
+  #Gold {
+    font-size: 14vh;
+    font-weight: bold;
+    color: var(--gold);
+  }
+
+  #Platinum {
+    font-size: 14vh;
+    font-weight: bolder;
+    color: var(--platinum);
+  }
   
   @media screen and (max-width: 1020px) {
     .sponsorInfo {
@@ -423,6 +449,7 @@ html {
     text-align: center;
     color: var(--white)
   }
+
 
 @media screen and (max-width: 1020px) {
     .levels {
