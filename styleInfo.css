@@ -391,6 +391,28 @@ html {
         font-size: 1rem;
         /* top: 530px; */
     }
+
+    #Bronze {
+      font-size: 10vh;
+      color: var(--bronze);
+    }
+  
+    #Silver {
+      font-size: 10vh;
+      color: var(--silver);
+    }
+  
+    #Gold {
+      font-size: 10vh;
+      font-weight: bold;
+      color: var(--gold);
+    }
+  
+    #Platinum {
+      font-size: 11vh;
+      font-weight: bolder;
+      color: var(--platinum);
+    }
   }
 
   @media screen and (max-width: 480px) {   
@@ -398,6 +420,8 @@ html {
         font-size: 1rem;
         /* top: 590px; */
     }
+
+   
   }
 
   /* SPONSOR LEVELS */
