@@ -394,24 +394,18 @@ html {
 
     #Bronze {
       font-size: 10vh;
-      color: var(--bronze);
     }
   
     #Silver {
       font-size: 10vh;
-      color: var(--silver);
     }
   
     #Gold {
       font-size: 10vh;
-      font-weight: bold;
-      color: var(--gold);
     }
   
     #Platinum {
-      font-size:8.1vh;
-      font-weight: bolder;
-      color: var(--platinum);
+      font-size: 10vh;
     }
   }
 
