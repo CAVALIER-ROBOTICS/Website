@@ -368,6 +368,12 @@
     border-radius: 20px;
 }
 
+#OutreachPicStacked {
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 1020px) {
     .outreachList {
         background-image: url("/images/TestFinalBlue.jpg");
