@@ -274,6 +274,14 @@ html {
   }
 }
 
+#seasonPic {
+  /* border: solid var(--darkBlue) 10px; */
+  max-width: 350px;
+  min-height: 125px;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
 @media screen and (max-width: 760px) {
   .seasons {  
       background-image: url("/images/TestFinalBlue.jpg");
