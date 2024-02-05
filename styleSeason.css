@@ -276,10 +276,13 @@ html {
 
 #seasonPic {
   /* border: solid var(--darkBlue) 10px; */
-  max-width: 350px;
+  max-width: 600px;
   min-height: 125px;
   border-radius: 20px;
   padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media screen and (max-width: 760px) {
@@ -321,6 +324,9 @@ html {
     min-height: 125px;
     border-radius: 20px;
     padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 
@@ -336,6 +342,9 @@ html {
     min-height: 125px;
     border-radius: 20px;
     padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 
