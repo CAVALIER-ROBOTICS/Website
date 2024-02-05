@@ -315,6 +315,13 @@ html {
   #CavBotsGen {
     top: 140px;
   }
+
+  #seasonPic {
+    max-width: 200px;
+    min-height: 125px;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -322,6 +329,13 @@ html {
     top: 115px;
     width: 260px;
     height: 160px;
+  }
+
+  #seasonPic {
+    max-width: 150px;
+    min-height: 125px;
+    border-radius: 20px;
+    padding: 5px 10px;
   }
 }
 
