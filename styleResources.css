@@ -1,0 +1,562 @@
+:root {
+    --blue: #85A0DE;
+    --lightBlue: #AEC0EA;
+    /* --gray: rgb(135, 134, 134); */
+    --forestGreen: #2e5e47;
+    --darkBlue: #0c0444;
+    --white: #fff;
+    --black: #000;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .nav-container {
+    width: 100%;
+    background-color: var(--blue);
+    position: fixed;
+    z-index: 4;
+    border-bottom: var(--darkBlue) solid 4px;
+  }
+  
+  .navbar {
+      display: grid;
+      grid-template-columns: 0.2fr auto 1fr;
+      align-items: center;
+      height: 65px;
+      width: 90%;
+      max-width: 1920px;
+      margin: 0 auto;
+  }
+  
+  #navbar-logo {
+      color: var(--darkBlue);
+      text-decoration: none;
+      font-size: calc(2vw - .1rem);
+      font-weight: 900;
+      justify-self: start;
+      margin-left: 20px;
+      cursor: pointer;
+      text-overflow: ellipsis;
+  }
+  
+  .nav-menu {
+      display: grid;
+      grid-template-columns: repeat(7, auto);
+      list-style: none;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      justify-self: end;
+  }
+  
+  .nav-links {
+      color: var(--darkBlue);
+      font-size: 1.3rem;
+      text-decoration: none;
+  }
+
+  .nav-links:hover {
+      color: var(--white);
+      transition: all 0.2s ease-out;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    background: var(--white);
+  }
+
+@media screen and (max-width: 1020px) {
+    .nav-container {
+        position: fixed;
+        background-color: var(--blue);
+        border-bottom: none;
+    }
+  
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        background: var(--blue);
+        margin: 0;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 65px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: 3;
+    }
+  
+
+    #navbar-logo {
+        color: var(--darkBlue);
+        margin-left: 20px;
+        font-size: 2.2rem;
+        top: 10px;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        text-overflow: ellipsis;
+    }
+  
+    .nav-menu.active {
+        background: var(--blue);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+  
+    .nav-links {
+        background-color: var(--blue);
+        color: var(--darkBlue);
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+        font-size: 1.3rem;
+    }
+  
+    .nav-links:hover {
+        background-color: var(--blue);
+        color: var(--forestGreen);
+        transition: all 0.4s ease;
+    }
+  
+    .navbar {
+        width: 100%;
+    }
+  
+    #mobile-menu { 
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        z-index: 2;
+    }
+  
+    .menu-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  .main {    
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-size: 20%;
+    background-repeat: repeat;
+    min-height: 90vh;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--blue);
+    border-radius: 0 0 50% 50%;
+    border-bottom: var(--forestGreen) 60px solid;
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 50px;
+    /* top: 65px; */
+    min-height: 100vh;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+}
+
+.main-content h1 {
+    /* CAVBOTS 7492 */
+    font-family: 'sani Sans';
+    font-style: normal;
+    font-weight: 1000;
+    /* font-size: 14.5rem; */
+    font-size: 10.5rem;
+
+    color: var(--white);
+    top: 70px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.logo-container {
+    padding: 20px 30px;
+    position: absolute;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  
+.logo-content {
+    display: flex;
+    justify-content: center;
+    margin-top: -23%;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 35px;
+    position: relative;
+}
+
+.main-btn {
+    font-size: 1.3rem;
+    top: 87%;
+    font-weight: 700;
+    background-color: var(--darkBlue);
+    padding: 14px 32px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.35s;
+    z-index: 2;
+}
+
+.main-btn a {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--forestGreen);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main-btn:hover {
+    color: #fff;
+} 
+
+.main-btn:hover:after {
+    width: 100%;
+}
+
+@media screen and (max-width: 1020px) {    
+    .main {    
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 40%;
+        background-repeat: repeat;
+        min-height: 90vh;
+        border-top: var(--darkBlue) solid 10px;
+    }
+    
+    .main-container {
+        z-index: 1;
+        width: 100%;
+        max-width: 1920px;
+        padding: 0 50px;
+        /* top: 65px; */
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0%;
+    }
+     
+    .main-content h1 {
+        font-size: calc(14vw - .05rem);
+    }
+
+   .logo-container img{ 
+        width: 250px;
+   }
+
+    .main-btn {
+        top: 240px;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .main {    
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 55%;
+        background-repeat: repeat;
+        min-height: 90vh;
+    }
+    
+    .main-content h1 {
+        text-align: center;
+        font-size: calc(17vw - .05rem);
+        width: 500px;
+    }
+
+    .main-btn {
+        top: 626px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        background-image: none;
+        border-bottom: var(--forestGreen) 60px solid;
+    }
+    
+    .main-content h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+    
+    .main-btn {
+        top: 300px;
+    }
+}
+
+.resourcesBlurb {
+    background-image: url(/images/TestFinalBlue.jpg);
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 300px) {
+    .resourcesBlurb {
+        background-image: url(/images/TestFinalBlue.jpg);
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+.resourcesBlurb h1 {
+    color: var(--forestGreen);
+}
+
+.resourcesBlurb p {
+    color: var(--white)
+}
+
+.site-footer {
+    height: 65px;
+    background-color: var(--blue);
+    display: flex;
+  }
+  
+  .footer-container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    padding: 30px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .footer-container {
+    text-align: center;
+    color: var(--darkBlue);
+  }
+  
+  .logo-left {
+    margin: auto 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-right {
+    margin: auto 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* OUTREACH CSS */
+  .outreach {
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-size: 20%;
+    background-repeat: repeat;
+    min-height: 90vh;
+}
+
+.outreach-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--blue);
+    border-radius: 0 0 50% 50%;
+    border-bottom: var(--forestGreen) 60px solid;
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 50px;
+    /* top: 65px; */
+    min-height: 100vh;
+    position: relative;
+}
+
+.outreach-container h1 {
+    font-family: 'sani Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7rem;
+
+    color: #FFFFFF;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);  
+
+    top: 100px;
+    text-align: center;
+    position: absolute;
+}
+
+.outreach-container p {
+    color: var(--white);
+    font-size: 3vh;
+    border: solid transparent 1px;
+    top: 240px;
+    width: 620px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    position: absolute;
+}
+
+@media screen and (max-width: 1020px) {
+.outreach {
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-size: 40%;
+    background-repeat: repeat;
+    min-height: 90vh;
+    border-top: var(--darkBlue) solid 10px;
+}
+
+.outreach-container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 50px;
+    /* top: 65px; */
+    min-height: 100vh;
+    position: relative;
+} 
+
+.outreach-container h1 {
+    font-size: 14vh;
+    top: 100px;
+    text-align: center;
+    position: absolute;
+}
+
+.outreach-container p {
+    color: var(--white);
+    font-size: 3vh;
+    top: 220px;
+    position: absolute;
+}
+}
+
+@media screen and (max-width: 760px) {
+.outreach {
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-size: 55%;
+    background-repeat: repeat;
+    min-height: 90vh;
+}
+
+.outreach-container h1 {
+    color: var(--white);
+    font-size: 3rem;
+    border: solid var(--darkBlue) 10px;
+    border-radius: 30px;
+    width: 260px;
+    height: 80px;
+    border-style: solid;
+    top: 100px;
+    text-align: center;
+    position: absolute;
+}
+
+.outreach-container p {
+  color: var(--white);
+  font-size: 2.8vh;
+  top: 200px;
+  max-width: 350px;
+  text-align: center;
+  position: absolute;
+}
+}
+
+/* OUTREACH LIST */
+.outreachList {
+background-image: url("/images/TestFinalBlue.jpg");
+background-size: 20%;
+background-repeat: repeat;
+min-height: 90vh;
+z-index: 1;
+width: 100%;
+max-width: 1920px;
+padding: 0 auto;
+border-bottom: var(--lightBlue) 10px solid;
+border-radius: 0 0 0% 0%;
+min-height: 100vh;
+position: relative;
+}
+
+.outreachList-item {
+padding: 20px 30px;
+position: relative;
+background-color: inherit;
+width: 50%;
+}
