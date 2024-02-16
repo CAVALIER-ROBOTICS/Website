@@ -276,10 +276,13 @@ html {
 
 #seasonPic {
   /* border: solid var(--darkBlue) 10px; */
-  max-width: 350px;
+  max-width: 600px;
   min-height: 125px;
   border-radius: 20px;
   padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media screen and (max-width: 760px) {
@@ -315,6 +318,16 @@ html {
   #CavBotsGen {
     top: 140px;
   }
+
+  #seasonPic {
+    max-width: 300px;
+    min-height: 125px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -322,6 +335,16 @@ html {
     top: 115px;
     width: 260px;
     height: 160px;
+  }
+
+  #seasonPic {
+    max-width: 225px;
+    min-height: 125px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 
