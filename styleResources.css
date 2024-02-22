@@ -560,3 +560,125 @@ position: relative;
 background-color: inherit;
 width: 50%;
 }
+
+ /* SOCIAL CSS */
+ .contact-container {
+    min-height: 200px;
+    background-color: var(--blue);
+    border-bottom: var(--lightBlue) 10px solid;
+    display: flex;
+}
+
+.contact-flow {
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    padding: 10px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-left: var(--lightBlue) 10px solid;
+    border-right: var(--lightBlue) 10px solid;
+}
+
+#CavBotsLogo {
+    width: 150px;
+}
+
+.contact-flow h2 {
+    color: var(--darkBlue);
+    font-size: 60px;
+    text-align: center;
+}
+
+.contact-flow h6 {
+    color: var(--darkBlue);
+    font-size: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    position: relative;
+    margin: 10px auto;
+}
+
+.fa-brands {
+    color: var(--darkBlue);
+    text-decoration: none;
+    padding: 0.3em;
+    size: 10px;
+    font-size: 1.5em;
+}
+
+.fa-solid {
+    color: var(--darkBlue);
+    text-decoration: none;
+    padding: 0.3em;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1020px) {
+    .contact-container {
+        background: var(--blue);
+        z-index: 1;
+        width: 100%;
+        max-width: 1920px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* FOOTER CSS */
+.site-footer {
+    background-image: url("/images/TestFinalBlue.jpg");
+    background-size: 20%;
+    background-repeat: repeat;  
+    height: 65px;
+    display: flex;
+}
+
+.footer-container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    padding: 30px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-container p {
+    text-align: center;
+    color: var(--white);
+}
+
+@media screen and (max-width: 1020px) {
+    .footer-container {
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 40%;
+        background-repeat: repeat;
+        z-index: 1;
+        width: 100%;
+        max-width: 1920px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer-container{
+        background-image: url("/images/TestFinalBlue.jpg");
+        background-size: 55%;
+        background-repeat: repeat;
+    }
+}
