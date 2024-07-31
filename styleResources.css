@@ -363,7 +363,49 @@
     background-image: url(/images/TestFinalBlue.jpg);
     text-align: center;
     padding-bottom: 20px;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.resourcesBigTextBox {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.resourcesBigTextBoxBackground {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px 30px;
+    border: 10px solid var(--forestGreen);
+    background-color: var(--blue);
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .resourcesBlurb p {
+        color: var(--white);
+        font-size: medium;
+    }
+    .resourcesBlurb h1 {
+        color: var(--white);
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resourcesBigTextBoxBackground {
+        text-align: center;
+        vertical-align: middle;
+        margin: auto;
+        width: 90%;
+        border-radius: 20px;
+        padding: 20px 30px;
+        border: 10px solid var(--forestGreen);
+        background-color: var(--blue);
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -376,11 +418,11 @@
 }
 
 .resourcesBlurb h1 {
-    color: var(--forestGreen);
+    color: var(--white);
 }
 
 .resourcesBlurb p {
-    color: var(--white)
+    color: var(--white);
 }
 
 .site-footer {
@@ -434,7 +476,7 @@
     margin: 0 auto;
     background-color: var(--blue);
     border-radius: 0 0 50% 50%;
-    border-bottom: var(--forestGreen) 60px solid;
+    border-bottom: var(--forestGreen) 20px solid;
     background-position: top left;
     background-repeat: no-repeat;
     z-index: 1;
@@ -442,7 +484,7 @@
     max-width: 1920px;
     padding: 0 50px;
     /* top: 65px; */
-    min-height: 100vh;
+    min-height: 70vh;
     position: relative;
 }
 
