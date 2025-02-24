@@ -210,6 +210,12 @@
     background-repeat: repeat;
     min-height: 90vh;
   }
+
+  #ColinOcker {
+    width: 400px; 
+    height: auto; 
+    border-radius: 50%; 
+  }
   
   .sponsors-container {
     display: flex;
@@ -466,6 +472,24 @@
         padding: 5px 10px;
     }
 
+    .grant-box {
+        background-color: var(--white);
+        max-width: 800px;
+        border: 8px solid var(--lightBlue);
+        border-radius: 20px;
+        margin: 10px auto;
+    }
+
+    .grant-box:hover {
+        cursor: default;
+        background-color: #327234;
+        max-width: 800px;
+        border: 8px solid #1a4e31;
+        border-radius: 20px;
+        transition: all .3s ease;
+        margin: 10px auto;
+    }
+
     .platinum-box {
         background-color: var(--white);
         max-width: 800px;
@@ -533,6 +557,24 @@
         background-color: #B87333;
         max-width: 800px;
         border: 8px solid #7c4f24;
+        border-radius: 20px;
+        transition: all .3s ease;
+        margin: 10px auto;
+    }
+    
+    .community-box {
+        background-color: var(--white);
+        max-width: 800px;
+        border: 8px solid var(--lightBlue);
+        border-radius: 20px;
+        margin: 10px auto;
+    }
+
+    .community-box:hover {
+        cursor: default;
+        background-color: #bd4646;
+        max-width: 800px;
+        border: 8px solid #793030;
         border-radius: 20px;
         transition: all .3s ease;
         margin: 10px auto;
